@@ -1,5 +1,7 @@
 # mods
 
+**English** · [العربية](README.ar.md)
+
 Ahmed's mods for Claude Code, published as a plugin marketplace.
 
 | Mod | What it does |

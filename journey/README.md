@@ -1,5 +1,7 @@
 # journey — a metro line for the task in hand
 
+**English** · [العربية](README.ar.md)
+
 Every stop from now to done, which stop the session is at, and **why** — drawn as a metro line in a
 pane, and pinned in the status line under the prompt.
 
