@@ -1,0 +1,12 @@
+{
+  "name": "ahmed-mods",
+  "owner": { "name": "Ahmed" },
+  "metadata": { "description": "Ahmed's mods for Claude Code." },
+  "plugins": [
+    {
+      "name": "journey",
+      "source": "./journey",
+      "description": "A metro line for the task in hand: every stop from here to done, which stop the session is at, and why."
+    }
+  ]
+}
