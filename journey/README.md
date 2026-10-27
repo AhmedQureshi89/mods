@@ -25,6 +25,21 @@ those three questions at a glance:
 It also keeps Claude honest: the whole route is laid out before the work starts, so a skipped step
 shows up as `⚠ passed, not marked` instead of disappearing.
 
+## Install
+
+In Claude Code 2.1.275 or later:
+
+```
+/plugin install journey --marketplace AhmedQureshi89/mods
+```
+
+Or from a shell, in two steps:
+
+```
+claude plugin marketplace add AhmedQureshi89/mods
+claude plugin install journey@ahmed-mods
+```
+
 ## How it is fed
 
 Claude draws the line; the mod does not guess. It registers a tool, `mcp__journey__line`, and adds a
