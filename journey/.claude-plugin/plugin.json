@@ -2,6 +2,7 @@
   "name": "journey",
   "version": "0.1.0",
   "author": { "name": "Ahmed" },
+  "license": "MIT",
   "description": "A metro line for the task in hand: every stop from here to done, which stop the session is at, and why — drawn in a pane and pinned in the status line.",
   "types": "./types/index.d.ts"
 }

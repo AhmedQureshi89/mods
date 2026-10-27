@@ -3,26 +3,27 @@
 Every stop from now to done, which stop the session is at, and **why** — drawn as a metro line in a
 pane, and pinned in the status line under the prompt.
 
-```
- ●  Read the roadmap row and the inbox note
- │    ✓ both say "no holiday calendar"
- │
- ●  Merge PR #146
- │    ✓ Merged by Ahmed
- │
- ◉  Deploy and read the clock back      ⏳ waiting on others
- │     YOU ARE HERE   since 13:41
- │    Why here: merged as 5919019; the clock is not read back yet
- │    Why this stop: CI does not deploy in this repo
- │
- ○  Record it in the hub                 (dim: not reached)
- │
- ○  🏁 Close the note and offer to archive
-```
+<p align="center"><img src="docs/screenshot.png" width="640" alt="The journey pane: three passed stops with what came of each, the current stop marked YOU ARE HERE with why the session is there, a stop flagged your call, and the status line under the prompt"></p>
+
+<sub>The pane and the status line for a sample task, drawn by the mod's own layout code.</sub>
 
 Green is where the session has been, dim is where it has not. `◉` is where it is now. `👤 your call`
 marks a stop only the person can pass; `⏳ waiting on others` one that waits on CI, a deploy or a
 review.
+
+## Why you would want it
+
+A long task in Claude Code is a wall of scrolling text. You come back after ten minutes and cannot
+tell what is finished, what Claude is doing now, or whether it is waiting on you. journey answers
+those three questions at a glance:
+
+- **What is done, and what came of it.** A stop is never ticked without saying what it produced.
+- **Where the session is, and why.** The current stop says why Claude is there and why the stop exists.
+- **Who has to act next.** Stops only you can pass say `👤 your call`; stops waiting on CI or a review
+  say `⏳ waiting on others`.
+
+It also keeps Claude honest: the whole route is laid out before the work starts, so a skipped step
+shows up as `⚠ passed, not marked` instead of disappearing.
 
 ## How it is fed
 
@@ -64,3 +65,7 @@ claude plugin test     journey
 
 `hooks/register.tsx` exports the pure parts (`apply`, `describe`, `layout`, `wrap`, `statusText`) so
 `hooks/register.test.tsx` tests the rules and the layout without a session.
+
+## License
+
+MIT — see [LICENSE](../LICENSE).
