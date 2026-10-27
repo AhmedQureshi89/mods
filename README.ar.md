@@ -1,8 +1,8 @@
 <div dir="rtl">
 
-# mods
+# مستودع mods
 
-[English](README.md) · **العربية**
+**العربية** · [English](README.md)
 
 إضافات (mods) من إعداد أحمد لـ Claude Code، منشورة على شكل متجر إضافات (plugin marketplace) يمكن تثبيت أي إضافة منه بأمرين.
 
@@ -58,6 +58,6 @@ claude plugin install journey@ahmed-mods
 
 ## الترخيص
 
-MIT — راجع ملف [LICENSE](LICENSE).
+رخصة MIT. راجع ملف [LICENSE](LICENSE).
 
 </div>
